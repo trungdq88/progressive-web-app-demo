@@ -1,6 +1,6 @@
 {
-  "short_name": "TrungDQ App",
-  "name": "Trung Dinh Quang App",
+  "short_name": "Useless Button",
+  "name": "Useless Button",
   "icons": [
     {
       "src": "/images/chrome-touch-icon-192x192.png",
@@ -15,5 +15,5 @@
   ],
   "start_url": "/index.html",
   "display": "standalone",
-  "orientation": "landscape"
+  "orientation": "portrait"
 }
