@@ -1,1 +1,44 @@
-Hello!
+<!doctype html>
+<html lang=en-GB>
+  <head>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=description content="TrungDQ App">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel=canonical href="https://airhorner.com/">
+    <title>TrungDQ App</title>
+    <link rel=manifest href=manifest.json>
+    <meta name=mobile-web-app-capable content=yes>
+    <meta name=application-name content="Air Horner">
+    <link rel=icon sizes=192x192 href=/images/chrome-touch-icon-192x192.png>
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <meta name=apple-mobile-web-app-title content="Air Horner">
+    <link rel=apple-touch-icon href=/images/chrome-touch-icon-192x192.png>
+    <meta name=msapplication-TileImage content=/images/chrome-touch-icon-192x192.png>
+    <meta name=msapplication-TileColor content=#2196F3>
+    <meta name=theme-color content=#2196F3>
+    <link rel=stylesheet href=/main.css>
+  </head>
+
+  <body>
+    <div id="container">
+      Hello!!
+    </div>
+
+    <script src=/main.js></script>
+    <script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js', { scope: '/' })
+        .then(function(registration) { 
+          console.log("Service Worker Registered"); 
+        });
+
+      navigator.serviceWorker.ready.then(function(registration) { 
+        console.log("Service Worker Ready");
+      });
+    }
+    </script>
+  </body>
+
+</html>
