@@ -1,13 +1,13 @@
-importScripts('cache-polyfill.js');
+importScripts('/progressive-web-app-demo/cache-polyfill.js');
 
 self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open('app').then(function(cache) {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/main.css',
-        '/main.js',
+        '/progressive-web-app-demo/',
+        '/progressive-web-app-demo/index.html',
+        '/progressive-web-app-demo/main.css',
+        '/progressive-web-app-demo/main.js',
       ]).then(function() {
         return self.skipWaiting();
       });
