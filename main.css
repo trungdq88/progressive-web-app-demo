@@ -19,6 +19,8 @@ body {
 }
 .nice-button {
   background-color: rgb(142, 209, 116);
+  user-select: none;
+  -webkit-user-select: none;
   padding: 10px 44px;
   width: 70px;
   color: #FFFFFF;
