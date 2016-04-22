@@ -3,17 +3,17 @@
   "name": "Useless Button",
   "icons": [
     {
-      "src": "/images/chrome-touch-icon-192x192.png",
+      "src": "/progressive-web-app-demo/images/chrome-touch-icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/images/chrome-touch-icon-384x384.png",
+      "src": "/progressive-web-app-demo/images/chrome-touch-icon-384x384.png",
       "sizes": "384x384",
       "type": "image/png"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "/progressive-web-app-demo/index.html",
   "display": "standalone",
   "orientation": "portrait"
 }
